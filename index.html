@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <header>
+    <h1>Ranjith Kumar</h1>
+    <p>Full Stack Developer | AI Enthusiast</p>
+    <button onclick="startListening()">🎤 Voice Control</button>
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showSection('about')">About</a></li>
+      <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+      <li><a href="#" onclick="showSection('stats')">Stats</a></li>
+      <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+      <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="profile.jpg" alt="Profile">
+      <p>I’m a passionate Computer Science Engineer skilled in web development, UI/UX, and AI-powered tools.</p>
+      <p>My goal is to craft immersive, smart applications that blend tech with creativity.</p>
+    </section>
+
+    <section id="projects" style="display:none;">
+      <h2>Projects</h2>
+      <input type="text" id="projectSearch" placeholder="Search Projects..." oninput="filterProjects()">
+      <ul id="projectList">
+        <li>
+          <h3>🔹 ShopMax</h3>
+          <p>An advanced E-Commerce frontend with cart, wishlist, filtering, and search functionality.</p>
+        </li>
+        <li>
+          <h3>🔹 Java Chat App</h3>
+          <p>A real-time desktop chat application using sockets, Swing, and multi-threading.</p>
+        </li>
+        <li>
+          <h3>🔹 Voice Portfolio</h3>
+          <p>Interactive personal portfolio with voice commands, speech feedback, and smart navigation.</p>
+        </li>
+        <li>
+          <h3>🔹 Weather App</h3>
+          <p>Live weather forecast using real-time API and beautiful UI.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="stats" style="display:none;">
+      <h2>Stats</h2>
+      <div class="counter">Projects Completed: <span id="projectsCount">0</span></div>
+      <div class="counter">Certifications Earned: <span id="certsCount">0</span></div>
+      <div class="counter">Hackathons Attended: <span id="hacksCount">0</span></div>
+    </section>
+
+    <section id="resume" style="display:none;">
+      <h2>Resume</h2>
+      <p>Click the link below to download your resume in PDF format:</p>
+      <a href="resume.pdf" download>📄 Download Resume</a>
+    </section>
+
+    <section id="contact" style="display:none;">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your message here..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ranjith Kumar | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('Particles.js config loaded');
+    });
+  </script>
+</body>
+</html>
