@@ -13,3 +13,6 @@ navigate sections like About, Projects, Resume, and Contact.
 - 🧠 Smart command detection: "Go to About", "Show Projects", "Open Resume", etc.
 - 🧩 Easily customizable layout and content
 
+URL:
+https://ranjithloozer.github.io/Voice-Command-portfolio/
+
